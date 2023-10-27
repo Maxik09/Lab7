@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            background: none;
+        }
+        .profile {
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow: auto;
+        }
+        img {
+            border-radius: 50%;
+            max-width: 150px;
+            height: auto;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #800080;
+            background-color: white;
+            padding: 5px;
+            border-radius: 5px;
+            text-align: left;
+            display: inline-block;
+        }
+        p {
+            margin: 10px 0;
+            color: #333;
+            text-align: left;
+        }
+        .contact-info {
+            font-weight: bold;
+            font-size: 20px;
+            color: #0000FF;
+            text-align: middle;
+        }
+
+        .current-status {
+            font-family: 'Arial', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #0077b6;
+            text-align: left;
+        }
+
+        .highlight-gray {
+            background-color: #333;
+            color: #0077b6;
+            padding: 5px;
+            border-radius: 5px;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .highlight-blue {
+            background-color: #0077b6;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .square-image {
+            width: 300px;
+            height: 300px;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .square-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+        video#backgroundVideo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="nier-automata.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="profile">
+        <div class="square-image">
+            <img src="Nier-Site.webp" alt="Nier Automata 2B">
+        </div>
+        <h1>Max Djafarov</h1>
+        <div>
+            <p class="contact-info">Contact Info: khurshiddjafarov@gmail.com</p>
+        </div>
+        <h2 class="current-status">Current status</h2>
+        <div>
+            <p class="highlight-gray">I'm a third-year computer engineering major at KU.</p>
+        </div>
+        <h2>Projects</h2>
+        <div>
+            <p class="highlight-gray">Worked on various projects throughout my school years. The most interesting was when I created an RPG game with its battle system.</p>
+        </div>
+        <h2>Work Experience</h2>
+        <div>
+            <p class="highlight-gray">Worked in a grocery store as a delicatessen assistant.</p>
+        </div>
+        <h2>Courses</h2>
+        <div>
+            <p class="highlight-gray">Software Engineering</p>
+            <p class="highlight-gray">Electronic Circuits I</p>
+            <p class="highlight-gray">Programming Paradigms</p>
+            <p class="highlight-gray">Intro to Communication Networks</p>
+        </div>
+        <h2>This is how Skyrim looks with over 100 mods installed</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/t-mVeUhyiJY" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</body>
+</html>
+
